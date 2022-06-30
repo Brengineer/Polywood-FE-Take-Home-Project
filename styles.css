@@ -1,0 +1,162 @@
+/* Styles specific to layout/design */
+
+.why-polywood .intro {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.why-polywood .intro img {
+
+}
+
+.customer-quote {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+    background-color: #F6F6F6;
+}
+.customer-quote .quote-body {
+    padding: 30px 50px;
+    text-align: center;
+}
+.customer-quote cite {
+    display: inline-block;
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+}
+.customer-quote .footnote {
+    margin-top: 5px;
+    font-size: 14px;
+}
+.customer-quote img {
+    max-width: 29%;
+}
+.customer-quote img.spaced {
+    margin: 30px 0 30px 30px;
+}
+
+.features {
+    margin-bottom: 30px;
+}
+.features .feature {
+    margin-top: 5px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.features .feature img {
+    border-radius: 50%;
+    padding: 11px;
+    background: #4A4A4A;
+}
+
+.colors {
+    text-align: center;
+}
+.colors .categories {
+    display: flex;
+    gap: 5%;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+.categories .category-link {
+    flex-basis: 30%;
+}
+.colors .swatches {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.75%;
+    margin-top: 45px;
+    margin-bottom: 0;
+    padding: 0 5%;
+}
+.colors .swatches li {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #cbcbcb;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.colors .swatches .blue {
+    background-color: #2970b5;
+}
+.colors .swatches .green {
+    background-color: #a3b866;
+}
+.colors .swatches .yellow {
+    background-color: #fbdb2c;
+}
+.colors .swatches .orange {
+    background-color: #df7e2e;
+}
+.colors .swatches .red {
+    background-color: #be2b28;
+}
+.colors .swatches .gray {
+    background-color: #6f6f6f;
+}
+.colors .swatches .dark-brown {
+    background-color: #483226;
+}
+.colors .swatches .white {
+    background-color: #f5f5f5;
+}
+.colors .swatches .tan {
+    background-color: #c7bcb2;
+}
+.colors .swatches .black {
+    background-color: #1c1c1c;
+}
+.colors .swatches .dark-green {
+    background-color: #3a483e;
+}
+.colors .swatches .brown {
+    background-color: #69472c;
+}
+.colors .swatches .teal {
+    background-color: #3ab2b4;
+}
+
+.blog {
+    text-align: center;
+}
+
+.reviews .review-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 767px) {
+    .why-polywood .intro {
+        flex-wrap: wrap;
+    }
+    .why-polywood .intro img {
+        margin-bottom: 35px;
+    }
+    
+    .customer-quote img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .why-polywood .intro img {
+        max-width: 36%;
+        margin-right: 40px;
+    }
+    
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6%;
+    }
+    .features .feature {
+        flex-basis: 47%;
+    }
+}
